@@ -3,10 +3,7 @@ kind: Workload
 metadata:
   name: spring-sensors
   labels:
-#    app.kubernetes.io/name: spring-sensors
-    app.tanzu.vmware.com/workload-type: web
-#   app.kubernetes.io/part-of: spring-sensors
-#    apps.tanzu.vmware.com/has-tests: true 
+      autoscaling.knative.dev/minScale: "1"
 spec:
   source:
     git:
