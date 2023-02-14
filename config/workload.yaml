@@ -3,12 +3,16 @@ kind: Workload
 metadata:
   name: spring-sensors
   labels:
-    app.kubernetes.io/name: spring-sensors
-    app.tanzu.vmware.com/workload-type: web-app
+    apps.tanzu.vmware.com/workload-type: web
+    apps.tanzu.vmware.com/auto-configure-actuators: "true"
+    app.kubernetes.io/part-of: spring-sensors
 spec:
+  params:
+  - name: annotations
+    value:
+      autoscaling.knative.dev/minScale: "1"
   source:
     git:
-      # update when code is pushed to a new location
       url: https://github.com/jdarrellvmware/spring-sensors.git
       ref:
         branch: main
