@@ -1,11 +1,15 @@
 accelerator:
   displayName: Spring Sensors
   description: A Spring application for tracking sensor data
-  iconUrl: https://dashboard.snapcraft.io/site_media/appmedia/2018/11/indicator-sensors_r8EdpLP.png
+  iconUrl: https://www.navsea.navy.mil/portals/103/Images/PSNSY_IMF/images/Logo_round_color_200_by_200.jpg?ver=2019-03-21-123258-380
   tags:
     - java
     - spring
-
+    - puget
+    - sound
+    - psns
+    - psns
+    - puget-sound
   options:
     - name: bannerText
       label: Banner Text
